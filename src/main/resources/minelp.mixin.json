@@ -1,0 +1,22 @@
+{
+    "required": true,
+    "minVersion": "0.7",
+    "package": "com.minelittlepony.client.mixin",
+    "refmap": "minelp.mixin.refmap.json",
+    "compatibilityLevel": "JAVA_16",
+    "client": [
+        "IResizeable",
+        "MixinCamera",
+        "MixinDefaultSkinHelper",
+        "MixinEntityRenderDispatcher",
+        "MixinEntityRenderers",
+        "MixinSkullBlockEntityRenderer",
+        "MixinHeldItemRenderer",
+        "MixinClientPlayerEntity",
+        "MixinPlayerMoveC2SPacket",
+        "MixinPlayerPositionLookS2CPacket",
+        "MixinVertextConsumers",
+        "MixinGameRenderer",
+        "MixinWorldRenderer"
+    ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "minelp",
+  "version": "4.8.7",
+  "name": "Mine Little Pony Ambisided",
+  "description": "Mine Little Pony turns players and mobs into ponies. Now with server api!",
+  "authors": [
+    "Mumfrey", "Killjoy1221", "Sollace", "SasisaDev"
+  ],
+  "contact": {
+    "homepage": "https://minelittlepony-mod.com/",
+    "sources": "https://github.com/MineLittlePony/MineLittlePony",
+    "issues": "https://github.com/MineLittlePony/MineLittlePony/issues"
+  },
+  "license": "MIT",
+  "icon": "minelp_logo.png",
+  "accessWidener": "minelp.aw",
+  "entrypoints": {
+    "client": [
+      "com.minelittlepony.client.MineLittlePonyClient"
+    ],
+    "server": [
+      "com.minelittlepony.server.MineLittlePonyServer"
+    ],
+    "hdskins": [
+      "com.minelittlepony.client.hdskins.MineLPHDSkins"
+    ],
+    "modmenu": [
+      "com.minelittlepony.client.modmenu.MineLPModMenuFactory"
+    ]
+  },
+  "mixins": [
+    "minelp.mixin.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.0",
+    "java": ">=17",
+    "fabric-api-base": ">=0.1.0",
+    "fabric-lifecycle-events-v1": ">=0.1.0",
+    "fabric-resource-loader-v0": ">=0.1.0",
+    "kirin": "*"
+  },
+  "suggests": {
+    "hdskins": "*",
+    "modmenu": "*"
+  }
+}

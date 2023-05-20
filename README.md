@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/github/license/MineLittlePony/MineLittlePony)
 ![](https://img.shields.io/badge/api-fabric-orange.svg)
 
-Turns players and mobs into ponies.
+Turns players and mobs into ponies. Also provides API for server uses!
 
 https://minelittlepony-mod.com
 
@@ -27,14 +27,22 @@ gradlew build
 
 Fabric (And FabricAPI) are required. Please refer to their installation instructions <a href="https://fabricmc.net">here</a> and come back once you have Fabric functioning.
 
-Once you have fabric installed, simply download the MineLittlePony-version.jar for your particular version from [the releases page](https://github.com/MineLittlePony/MineLittlePony/releases) and place it into your mods folder next to the fabric-api jar and (optionally) the hdskins jar.
+Once you have fabric installed, simply download the MineLittlePony-version.jar for your particular version from [the releases page](https://github.com/SasisaDev/MineLittlePony-Ambisided/releases) and place it into your mods folder next to the fabric-api jar and (optionally) the hdskins jar.
 
 **Remember to use the fabric launcher profile when starting the game!**
 
-## Maven
+## Gradle
 
-Stable Releases Channel: `https://repo.minelittlepony-mod.com/maven/release`
+```
+sourceControl {
+    gitRepository("https://github.com/SasisaDev/MineLittlePony-Ambisided.git") {
+        producesModule("com.minelittlepony:minelittlepony")
+    }
+}
+```
 
-Unstable Snapshot Channel: `https://repo.minelittlepony-mod.com/maven/snapshot`
-
-Dependency: `com.minelittlepony:minelittlepony:<version>`
+```
+dependencies {
+    implementation 'com.minelittlepony:minelittlepony:4.8.7'
+}
+```
